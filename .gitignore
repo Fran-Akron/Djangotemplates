@@ -1,0 +1,42 @@
+# Archivos de entorno virtual
+venv/
+env/
+.env
+
+# Archivos de caché y compilados de Python
+newapp/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Base de datos
+db.sqlite3
+db.sqlite3-journal
+
+# Archivos de media subidos por los usuarios
+newapp/media/
+
+# Archivos de registros y logs
+*.log
+newapp/logs/
+*.pot
+
+# Archivos de paquetes y dependencias de Python
+newapp/*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración de editores de código
+.idea/
+.vscode/
+*.iws
+
+# Archivos de cobertura de tests
+.coverage
+.coverage.*
+htmlcov/

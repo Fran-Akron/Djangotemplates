@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenidos a todos!</title>
+    <style>
+        
+        body {
+            background-color: #000000; 
+            color: #00ff41; 
+            font-family: 'Courier New', Courier, monospace; 
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto; 
+            padding: 25px;
+            border: 1px solid #00ff41; 
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 1.6em;
+            text-shadow: 0 0 5px #00ff41; 
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .image-gallery img {
+            width: 40%; 
+            max-width: 250px; 
+            height: auto;
+            border: 2px solid #00ff41;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Este mini proyecto representa una prueba de levantar una página de Django con templates.</h1>
+        
+        <div class="image-gallery">
+            <img src="https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg" alt="The Matrix Poster">
+            
+     
+
+        </div>
+        
+        <h1>Saludos cordiales a todos los presentes.</h1>
+    </div>
+
+</body>
+</html>
+
+<!-- Para visualizar, recordar navegar hacia la carpeta del proyecto, luego 
+ 
+iniciar el entorno virtual                                   .\.venv\Scripts\activate
+
+luego realizar el siguiente comando:                         python manage.py runserver
+
+-->  
+
