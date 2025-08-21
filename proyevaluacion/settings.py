@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-)%bxm6zt-64t-)=mn1cpv6odz-2b7@q+_)#del97^@t6=uxv)*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'proyevaluacion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],  # 👈 añadido
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,6 +67,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'proyevaluacion.wsgi.application'
 
@@ -103,9 +105,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
-TIME_ZONE = 'UTC'
+LANGUAGE_CODE = 'es-cl'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 
@@ -117,6 +118,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
+STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [BASE_DIR / "static"]   # para desarrollo (donde guardas CSS, JS, imágenes)
+STATIC_ROOT = BASE_DIR / "staticfiles" # para producción (donde se recopilan los archivos estáticos al ejecutar collectstatic)
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
