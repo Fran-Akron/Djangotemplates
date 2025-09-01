@@ -9,9 +9,6 @@ newapp/__pycache__/
 *.pyo
 *.pyd
 
-# Base de datos
-db.sqlite3
-db.sqlite3-journal
 
 # Archivos de media subidos por los usuarios
 newapp/media/
